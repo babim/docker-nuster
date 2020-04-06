@@ -1,10 +1,9 @@
-FROM babim/centosbase
+FROM babim/centosbase:7
 
 # Configuration variables.
 ENV SOFT		nuster
 ENV NUSTER_VERSION	3.2.3.19
 ENV LUA_VERSION		5.3.4
-ENV LUA_SRC_DIR		/tmp/lua
 
 # download option
 RUN yum install -y wget bash && cd / && wget --no-check-certificate https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20SCRIPT%20AUTO/option.sh && \
