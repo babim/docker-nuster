@@ -1,4 +1,4 @@
-FROM babim/alpinebase
+FROM babim/alpinebase:3.11
 
 # Configuration variables.
 ENV SOFT		nuster
